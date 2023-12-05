@@ -86,6 +86,7 @@ def get_numbers(input: list[str]) -> list[str]:
                 symbols.append(input[i - 1][lower + 1])
                 if validate_symbols(symbols):
                     numbers.append(number.group())
+    return numbers
 
 
 def calculate_sum(numbers: list[str]) -> int:
